@@ -9,23 +9,23 @@ Get NFT collection statistics from Etherscan and OpenSea[^1].
 3. Install dependencies 
    * Linux: 
       ```shell
-      $ python3 -m pip -r requirements.txt
+      python3 -m pip install -r requirements.txt
       ```
    * Windows: 
       ```cmd
-      > py -3 -m pip -r requirements.txt
+      py -3 -m pip install -r requirements.txt
       ```
 
 ## Usage
 
 Linux
 ```shell
-$ python3 NFTCollectionStats.py -c <CONTRACT_ADDRESS> -o <OPENSEA_COLLECTION_ID>
+python3 NFTCollectionStats.py -c <CONTRACT_ADDRESS> -o <OPENSEA_COLLECTION_ID>
 ```
 
 Windows
 ```cmd
-> py -3 NFTCollectionStats.py --c <CONTRACT_ADDRESS> -o <OPENSEA_COLLECTION_ID>
+py -3 NFTCollectionStats.py -c <CONTRACT_ADDRESS> -o <OPENSEA_COLLECTION_ID>
 ```
 
 ## Usage Example
