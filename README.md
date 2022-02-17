@@ -1,36 +1,36 @@
 # NFTCollectionStats
 
-Get NFT collection statistics from Etherscan and OpenSea[^1].
+`NFTCollectionStats` is a NFT collection statistics extractor from [Etherscan](https://etherscan.io/) and [OpenSea](https://opensea.io/)[^1].
 
 ## Prerequisites
 
 1. Download chromedriver from https://chromedriver.chromium.org/downloads (Make sure you download the same version as your chrome browser)
 2. Move the chromedriver to the project directory
 3. Install dependencies 
-   * Linux: 
-      ```shell
-      python3 -m pip install -r requirements.txt
-      ```
-   * Windows: 
-      ```cmd
-      py -3 -m pip install -r requirements.txt
-      ```
+   ```console
+   $ python3 -m pip install -r requirements.txt
+   ```
 
 ## Usage
 
 Linux
-```shell
-python3 NFTCollectionStats.py -c <CONTRACT_ADDRESS> -o <OPENSEA_COLLECTION_ID>
-```
+```console
+$ python3 NFTCollectionStats.py
+usage: NFTCollectionStats.py [-h] -c CONTRACT_ADDRESS -o OPENSEA_COLLECTION_ID
 
-Windows
-```cmd
-py -3 NFTCollectionStats.py -c <CONTRACT_ADDRESS> -o <OPENSEA_COLLECTION_ID>
+NFT Collection Statistics
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -c CONTRACT_ADDRESS, --contract_address CONTRACT_ADDRESS
+                        Contract Address
+  -o OPENSEA_COLLECTION_ID, --opensea_collection_id OPENSEA_COLLECTION_ID
+                        Opensea Collection Id
 ```
 
 ## Usage Example
 
-```shell
+```console
 $ python3 NFTCollectionStats.py -c 0xeb6dffb87315a2bdf4dedf72b993adc960773a0d -o metaeagleclub-mec
 --------------------
 | Token Statistics |
