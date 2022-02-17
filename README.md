@@ -13,7 +13,6 @@
 
 ## Usage
 
-Linux
 ```console
 $ python3 NFTCollectionStats.py
 usage: NFTCollectionStats.py [-h] -c CONTRACT_ADDRESS -o OPENSEA_COLLECTION_ID
